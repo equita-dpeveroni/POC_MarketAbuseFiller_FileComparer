@@ -117,7 +117,9 @@
 				var cells = orifinalLine.Split("\t");
 				for (int i = 0; i < cells.Length; i++)
 				{
-					if (i != 18)
+					if (i != 18 //Order.ExecutedQty
+							&& i != 13 //Order.OrderStatus
+						)
 						workingLine = string.Concat(workingLine, cells[i]);
 				}	
 			}
